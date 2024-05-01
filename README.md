@@ -15,14 +15,55 @@ Most of our resources in academia and in industries to an extent go in creating 
 A consistently improved process of preprocessing and cleaning is the next requirement in data science.
 
 ## Data Lifecycle (how long in which storage tier?)
+
 ## Data Retention (if and when to delete?)
+Does legal allow this?\n
+Have I ever had to retireive it from any of my non-standard storage tiers?\n
+Has it been 2xtime outside standard storage than inside standard storage?\n
+DELETE!
+
 ## Data Compression (shall I, how?)
+Usually large storage files need compression - iamges, videos etc\n
+Compression is neither easy nor cheap. It takes time and effort to convert back and forth from original (eg mp4) to comrpessed (txt/bin etc) files.\n
+Maybe compress before cold tier transfer?\n
+Maybe alwsys compress if your de-comress method is not too lossy, too time consuming, or too complex.
+
 ## Cloud specific practices
+
 ### AutoClass
+
 ### Multi-regional
+Do I need a deep-copy of my data in multiple regions?]\n
+Is the cost of data transfer across regions (1 or 2 or n times) higher than my cost of keeping the data in multiple regions?
+
 ### Move to on-prem
+If I frequently access data, if my data is large enough, cannot be compressed, and may or may not be edited, it might be finally time to intriduce your own private cloud aka old style on-prem storage. 
+
 ### Object size, numbers etc
+
+
+\n
 ## Data Drift
+An ML model in production may or may not be constantly re-trained to avoid unnecessary resource consumption. Whie most simpler use-cases will not see a difference in final results, some places might. Especially where data is slowly changing aka Data Drift.\n
+e.g. A neural network predicting rainfall built in 2010s will need a fix to accomodate climate change.\n
+or a language constantly evolving...
+
+### Numerical data
+For numerical data, a quick summary stats check on either data or results or both will tell you if the data drift is significant enough to need a model re-evaluation/re-train. This is not exactly an outlier check. It is more like - is my mean drifitng?\n
+e.g. 10 years of data tells me mean temperature in January is 100', median is 95'...\n
+if my new Jan mena temoerture is 98' and my new median is 93' --- strike 1\n
+if my new Feb mena temoerture is old_mean-2 and my new median is old_mean-3 -- strike 2\n
+if my new March mena temoerture is old_mean-3 and my new median is old_mean-3 -- strike 3\n
+\n
+Yes, temperature is slowly rising.\n
+A z-score check, IQR check, standard deviation comparison will give a bigger picture on this.\n
+\n
+
+### Non-numerical data
+
+
+
+
 
 
 
