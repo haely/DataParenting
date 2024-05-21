@@ -8,7 +8,13 @@ To show the differnet ways to detect drifts, I have included a python code to co
 IQR: basic stats
 EWMA: no machine learnng but some data analysis
 LSTM: the most intuitive neural network method. Other include isolation trees, and nearest neighbours (I might add this later)
-Prophet: FB's timeseries library
+Prophet: FB's timeseries library (not complete)
+
+From the sample data I have (shown in main.py), only LSTM catches these as anomalies compared to IQR, and EWMA. This shows that LSTM is more sensitive and if we care about not missing out (false positives > false negatives) LSTM is the better choice.
+
+<img width="611" alt="Screenshot 2024-05-07 at 23 01 38" src="https://github.com/haely/DataParenting/assets/32823897/010fae20-5493-4bb2-ad5f-d29e1805abfa">
+
+
 
 ### 1. Interquartile Range (IQR) Method (Statistical)
 - **Description**: Compares the difference between the 75th and 25th percentiles of the target variable.
