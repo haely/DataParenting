@@ -1,0 +1,20 @@
+# Ignore DVC cache directory
+.dvc/
+
+# Ignore DVC logs directory
+.dvc/tmp/
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore virtual environment directory
+venv/
+
