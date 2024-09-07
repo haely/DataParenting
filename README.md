@@ -14,6 +14,16 @@ Most of our resources in academia and in industries to an extent go in creating 
 
 A consistently improved process of preprocessing and cleaning is the next requirement in data science.
 
+## Medium Articles
+
+- [Data intro](#data-hoarding)
+- [Cloud Storage](#cloud-storage)
+- [Data Lifecycle](#data-lifecycle)
+- [Data Drift](#data-drift)
+- [Data Compression](#data-compression)
+- [VertexAI](#vertex-ai)
+---
+
 ## Data Lifecycle (how long in which storage tier?)
 
 ## Data Retention (if and when to delete?)
@@ -61,7 +71,34 @@ A z-score check, IQR check, standard deviation comparison will give a bigger pic
 
 ### Non-numerical data
 
+TBD
 
+## Data Hoarding
+Don't be a Data Hoarder
+### Link 
+https://medium.com/@haely.shah/dont-be-a-data-hoarder-embrace-data-parenting-bf17d2cd0eda
+
+## Cloud Storage
+Cloud Storage needs Spring cleaning too!
+### Link 
+https://medium.com/@haely.shah/cloud-storage-spring-cleanup-what-to-sweep-under-the-rug-and-what-to-trash-00513f6cb386
+
+## Data Lifecycle
+Data Lifecycle - get started
+### Link
+https://medium.com/@haely.shah/the-data-lifecycle-where-does-your-data-live-and-for-how-long-1d87ad96289b
+
+## Data Drift
+Drift in Data can change your model results
+### Link
+https://medium.com/@haely.shah/data-drift-the-stealthy-threat-to-your-machine-learning-models-4dbe7b530497
+
+## Data Compression
+Lossy, lossless etc. how to manage this?
+### Link
+https://medium.com/@haely.shah/data-compression-shrink-your-data-footprint-without-shrinking-your-options-a13b9292fb1f
+ 
+## Vertex AI
 
 
 
